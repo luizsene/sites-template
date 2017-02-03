@@ -1,0 +1,29 @@
+{
+  "name": "template-1",
+  "version": "1.0.0",
+  "description": "Simple responsive template",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1fabiopereira/sites-template.git"
+  },
+  "keywords": [
+    "responsive",
+    "template",
+    "html5"
+  ],
+  "author": "Fábio Pereira <fabio.pereira.gti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1fabiopereira/sites-template/issues"
+  },
+  "homepage": "https://github.com/1fabiopereira/sites-template#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "0.0.14"
+  }
+}
