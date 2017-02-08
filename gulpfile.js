@@ -1,30 +1,31 @@
 'use strict';
 
 const gulp = require('gulp');
-var concat = require('gulp-concat');
+const concat = require('gulp-concat');
 const minify = require('gulp-minify');
 const minifyCss = require('gulp-minify-css');
 const rename = require('gulp-rename');
 const strip = require('gulp-strip-comments');
+const removeEmptyLines = require('gulp-remove-empty-lines');
 
-var paths = {
+const paths = {
     css: [
-        './css/*.css'
+        './public/css/*.css'
     ],
 
     js: [
-        './js/jquery.min.js',
-        './js/jquery.appear.min.js',
-        './js/jquery.magnific-popup.min.js',
-        './js/jquery.themepunch.revolution.min.js',
-        './js/jquery.themepunch.tools.min.js',
-        './js/bootstrap.min.js ',
-        './js/revolution.extension.layeranimation.min.js',
-        './js/revolution.extension.slideanims.min.js',
-        './js/revolution.extension.parallax.min.js',
-        './js/imagesloaded.pkgd.min.js',
-        './js/owl.carousel.min.js',
-        './js/main.min.js'
+        './public/js/jquery.min.js',
+        './public/js/jquery.appear.min.js',
+        './public/js/jquery.magnific-popup.min.js',
+        './public/js/jquery.themepunch.revolution.min.js',
+        './public/js/jquery.themepunch.tools.min.js',
+        './public/js/bootstrap.min.js ',
+        './public/js/revolution.extension.layeranimation.min.js',
+        './public/js/revolution.extension.slideanims.min.js',
+        './public/js/revolution.extension.parallax.min.js',
+        './public/js/imagesloaded.pkgd.min.js',
+        './public/js/owl.carousel.min.js',
+        './public/js/main.min.js'
     ]
 };
 
@@ -32,7 +33,8 @@ gulp.task('minify:js', function () {
     return gulp.src(paths.js)
         .pipe(concat('bundle.js'))
         .pipe(strip())
-        .pipe(gulp.dest('./bundle/'));
+        .pipe(removeEmptyLines())
+        .pipe(gulp.dest('./public/bundle/'));
 });
 
 
@@ -43,6 +45,6 @@ gulp.task('minify:css', function(done) {
             keepSpecialComments: 0
         }))
         .pipe(rename({ extname: '.min.css' }))
-        .pipe(gulp.dest('./bundle/'))
+        .pipe(gulp.dest('./public/bundle/'))
         .on('end', done);
 });
