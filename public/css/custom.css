@@ -21,14 +21,13 @@ body {
     height: 50px;
     margin: 0 10px;
     line-height: 50px;
-    font-family: Entypo;
+    font-family: Entypo, serif;
     font-size: 28px;
     text-align: center;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     -webkit-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
 }
