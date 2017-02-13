@@ -16,6 +16,7 @@ const paths = {
     js: [
         './public/js/jquery.min.js',
         './public/js/jquery.appear.min.js',
+        './public/js/jquery.tweet.min.js',
         './public/js/jquery.magnific-popup.min.js',
         './public/js/jquery.themepunch.revolution.min.js',
         './public/js/jquery.themepunch.tools.min.js',
@@ -25,6 +26,8 @@ const paths = {
         './public/js/revolution.extension.parallax.min.js',
         './public/js/imagesloaded.pkgd.min.js',
         './public/js/owl.carousel.min.js',
+        './public/js/masonry.pkgd.min.js',
+        './public/js/isotope.pkgd.min.js',
         './public/js/main.min.js'
     ]
 };
