@@ -16,7 +16,6 @@ const paths = {
     js: [
         './public/js/jquery.min.js',
         './public/js/jquery.appear.min.js',
-        './public/js/jquery.tweet.min.js',
         './public/js/jquery.magnific-popup.min.js',
         './public/js/jquery.themepunch.revolution.min.js',
         './public/js/jquery.themepunch.tools.min.js',

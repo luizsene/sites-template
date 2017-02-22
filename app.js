@@ -8,6 +8,7 @@ const commomRoutes = require('./routes/common');
 
 /*---------------------- Proxy reverso de arquivos estáticos ---------------------- */
 app.use('/bundle', express.static(__dirname + '/public/bundle'));
+app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/images', express.static(__dirname + '/public/images'));
 app.use('/fonts', express.static(__dirname + '/public/fonts'));
 /*-------------------------------------------------------------------------------- */
