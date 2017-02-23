@@ -27,7 +27,7 @@ const paths = {
         './public/js/owl.carousel.min.js',
         './public/js/masonry.pkgd.min.js',
         './public/js/isotope.pkgd.min.js',
-        './public/js/main.min.js'
+        './public/js/main.min.js',
     ]
 };
 
